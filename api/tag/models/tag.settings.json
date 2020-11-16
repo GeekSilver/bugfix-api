@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags",
+  "info": {
+    "name": "tag",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "bugs": {
+      "collection": "bug",
+      "via": "tags",
+      "dominant": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "fab": {
+      "type": "boolean",
+      "required": true
+    },
+    "tag_aliases": {
+      "collection": "tag-alias",
+      "via": "tag"
+    }
+  }
+}

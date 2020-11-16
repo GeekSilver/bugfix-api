@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bugs",
+  "info": {
+    "name": "bug"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "exception": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "richtext",
+      "required": true
+    },
+    "tags": {
+      "via": "bugs",
+      "collection": "tag"
+    }
+  }
+}

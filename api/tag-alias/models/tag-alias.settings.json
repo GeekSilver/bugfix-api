@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tag_aliases",
+  "info": {
+    "name": "tag_alias"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "tag": {
+      "via": "tag_aliases",
+      "model": "tag"
+    }
+  }
+}
