@@ -1,7 +1,7 @@
 module.exports = {
   settings: {
     cors: {
-      enabled: false,
+      enabled: true,
       origin: [
         "https://bugfix-dev.herokuapp.com",
         "http://bugfix-dev.herokuapp.com",
